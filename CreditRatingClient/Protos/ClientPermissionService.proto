@@ -1,0 +1,30 @@
+﻿syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace = "Clients";
+
+package Clients;
+
+service ClientPermissionService
+{
+	rpc AssignPermissionsForClient(AssignPermissionsForClientRequest) returns(AssignedPermissionReply);
+}
+
+message AssignPermissionsForClientRequest{
+	int64 ClientId=1;
+	repeated ClientPermissionReq Permissions=2;
+	
+}
+
+message ClientPermissionReq{
+	int64 Code=1;
+	string Title=2;
+	optional google.protobuf.Int64Value ParentId=3;
+	
+}
+
+message AssignedPermissionReply{
+	repeated int64 Permissions=1 ;
+}

@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = CreditRatingClient
+build_property.ProjectDir = D:\Resources\Practices\WorkingWithGrpcOAuth\CreditRatingClient\

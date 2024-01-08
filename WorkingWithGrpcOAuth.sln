@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreditRatingClient", "CreditRatingClient\CreditRatingClient.csproj", "{86970B51-B658-42A9-A6BA-F1722C41C7F7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreditRatingService", "CreditRatingService\CreditRatingService.csproj", "{3954D562-7450-4E65-BD14-90546CDD5C26}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{86970B51-B658-42A9-A6BA-F1722C41C7F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86970B51-B658-42A9-A6BA-F1722C41C7F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86970B51-B658-42A9-A6BA-F1722C41C7F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86970B51-B658-42A9-A6BA-F1722C41C7F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3954D562-7450-4E65-BD14-90546CDD5C26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3954D562-7450-4E65-BD14-90546CDD5C26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3954D562-7450-4E65-BD14-90546CDD5C26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3954D562-7450-4E65-BD14-90546CDD5C26}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BDCBA078-2F7B-4E18-A21B-42EF07C036CF}
+	EndGlobalSection
+EndGlobal

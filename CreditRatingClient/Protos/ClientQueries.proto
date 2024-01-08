@@ -1,0 +1,42 @@
+﻿syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace = "Clients";
+
+package Clients;
+
+service ClientQueries
+{
+	rpc GetById(GetClientByIdRequest) returns(ClientReply);
+	rpc GetAll(google.protobuf.Empty) returns (ClientsReply);
+}
+
+
+message GetClientByIdRequest{
+	int64 ClientId=1;
+}
+
+message ClientReply{
+	int64 ClientId=1;
+	string Name=2;
+	string Secret=3;
+	string Description=4;
+	repeated ClientPermissionRep Permissions=5;
+}
+
+message ClientPermissionRep{
+	int64 Id=1;
+	int64 Code=2;
+	string Title =3;
+	google.protobuf.Int64Value ParentId=4;
+	string ParentTitle=5;
+	bool HasChildren =6;
+	repeated ClientPermissionRep Children =7;
+
+}
+
+message ClientsReply{
+	repeated ClientReply Clients=1;
+}
